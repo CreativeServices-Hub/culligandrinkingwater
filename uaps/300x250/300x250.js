@@ -3,7 +3,8 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"300x250_atlas_1", frames: [[1012,650,450,165],[0,650,1010,196],[1464,650,573,78],[0,0,1985,648]]}
+		{name:"300x250_atlas_P_1", frames: [[0,198,450,165],[0,0,1010,196],[0,365,612,83]]},
+		{name:"300x250_atlas_NP_1", frames: [[0,0,1340,432]]}
 ];
 
 
@@ -27,30 +28,30 @@ lib.ssMetadata = [
 
 
 
+(lib.bg = function() {
+	this.initialize(ss["300x250_atlas_NP_1"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+
+
+
 (lib.Bitmap2 = function() {
-	this.initialize(ss["300x250_atlas_1"]);
+	this.initialize(ss["300x250_atlas_P_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
 (lib.Bitmap3 = function() {
-	this.initialize(ss["300x250_atlas_1"]);
+	this.initialize(ss["300x250_atlas_P_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap4 = function() {
-	this.initialize(ss["300x250_atlas_1"]);
+(lib.Bitmap6 = function() {
+	this.initialize(ss["300x250_atlas_P_1"]);
 	this.gotoAndStop(2);
-}).prototype = p = new cjs.Sprite();
-
-
-
-(lib.Layer2 = function() {
-	this.initialize(ss["300x250_atlas_1"]);
-	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -67,15 +68,15 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_7
-	this.instance = new lib.Bitmap4();
-	this.instance.setTransform(-360,313,0.9202,0.9202);
+	this.instance = new lib.Bitmap6();
+	this.instance.setTransform(-382,368,1.1135,1.114);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-360,313,527.3,71.80000000000001);
+p.nominalBounds = new cjs.Rectangle(-382,368,681.5,92.5);
 
 
 (lib.Symbol2 = function(mode,startPosition,loop,reversed) {
@@ -91,14 +92,14 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_5
 	this.instance = new lib.Bitmap3();
-	this.instance.setTransform(-407,248,0.6504,0.6506);
+	this.instance.setTransform(-432,264,0.7852,0.7853);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-407,248,656.9,127.5);
+p.nominalBounds = new cjs.Rectangle(-432,264,793.1,153.89999999999998);
 
 
 (lib.Symbol1 = function(mode,startPosition,loop,reversed) {
@@ -114,17 +115,17 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_3
 	this.instance = new lib.Bitmap2();
-	this.instance.setTransform(-357,157,0.9652,0.9652);
+	this.instance.setTransform(-316,153,1.0767,1.0767);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-357,157,434.3,159.3);
+p.nominalBounds = new cjs.Rectangle(-316,153,484.5,177.7);
 
 
-(lib.bg = function(mode,startPosition,loop,reversed) {
+(lib.bg_1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
 	var props = new Object();
@@ -136,15 +137,15 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 
 	// Layer_1
-	this.instance = new lib.Layer2();
-	this.instance.setTransform(-2109,-219,1.6675,1.6675);
+	this.instance = new lib.bg();
+	this.instance.setTransform(-1547,-207,2.5096,2.5095);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-2109,-219,3310.1,1080.6);
+p.nominalBounds = new cjs.Rectangle(-1547,-207,3362.9,1084.1);
 
 
 // stage content:
@@ -161,36 +162,36 @@ if (reversed == null) { reversed = false; }
 
 	// Symbol_3
 	this.instance = new lib.Symbol3("synched",0);
-	this.instance.setTransform(99.65,162.25,0.1801,0.1801,0,0,0,-96.3,348.9);
+	this.instance.setTransform(107.8,186.4,0.176,0.176,0,0,0,-41.2,462.2);
 	this.instance.alpha = 0;
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(54).to({_off:false},0).to({regX:-96.5,regY:348.8,scaleX:0.24,scaleY:0.24,x:99.1,y:165.9,alpha:1},17,cjs.Ease.get(1)).wait(169));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(54).to({_off:false},0).to({regX:-41.4,scaleX:0.2344,scaleY:0.2344,x:109.7,y:188.65,alpha:1},17,cjs.Ease.get(1)).wait(169));
 
 	// Symbol_2
 	this.instance_1 = new lib.Symbol2("synched",0);
-	this.instance_1.setTransform(118.8,58.95,0.24,0.24,0,0,0,0.2,0.2);
+	this.instance_1.setTransform(116.05,57.6,0.2344,0.2344,0,0,0,0.2,0.2);
 	this.instance_1.alpha = 0;
 	this.instance_1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(2).to({_off:false},0).to({regX:0,regY:0,x:118.75,y:54.1,alpha:1},29,cjs.Ease.get(1)).wait(209));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(2).to({_off:false},0).to({y:52.9,alpha:1},29,cjs.Ease.get(1)).wait(209));
 
 	// Symbol_1
 	this.instance_2 = new lib.Symbol1("synched",0);
-	this.instance_2.setTransform(130.8,18.55,0.24,0.24,0,0,0,0.2,0.2);
+	this.instance_2.setTransform(127.75,18.1,0.2344,0.2344,0,0,0,0,0.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(240));
 
 	// bg
-	this.instance_3 = new lib.bg("synched",0);
-	this.instance_3.setTransform(153.6,50.15,0.24,0.24,0,0,0,0.2,0.2);
+	this.instance_3 = new lib.bg_1("synched",0);
+	this.instance_3.setTransform(150.05,48.95,0.2344,0.2344,0,0,0,0.2,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(240));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(-202.5,122.6,644.3,134.29999999999998);
+p.nominalBounds = new cjs.Rectangle(-62.6,125.4,638.3000000000001,129.2);
 // library properties:
 lib.properties = {
 	id: '1C8AF73AABC14344AF8569EF47B7E598',
@@ -200,7 +201,8 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/300x250_atlas_1.png", id:"300x250_atlas_1"}
+		{src:"images/300x250_atlas_P_1.png", id:"300x250_atlas_P_1"},
+		{src:"images/300x250_atlas_NP_1.jpg", id:"300x250_atlas_NP_1"}
 	],
 	preloads: []
 };
